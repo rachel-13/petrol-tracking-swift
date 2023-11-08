@@ -10,6 +10,7 @@ import Foundation
 protocol PetrolListViewModelProtocol {
   var petrolRecords: [PetrolRecord] { get }
   func viewDidLoad()
+  func selectedRecord(petrolRecord: PetrolRecord)
 }
 
 class PetrolListViewModel {
@@ -34,5 +35,9 @@ extension PetrolListViewModel: PetrolListViewModelProtocol {
     }
     petrolRecords = records
     viewController.refreshData()
+  }
+  
+  func selectedRecord(petrolRecord: PetrolRecord) {
+    coordinator.showDetails(for: petrolRecord)
   }
 }

@@ -56,7 +56,7 @@ extension PetrolListViewController: UITableViewDelegate, UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     guard let viewModel = viewModel,
-      let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath) as? PetrolRecordViewCell else {
+          let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath) as? PetrolRecordViewCell else {
       return UITableViewCell()
     }
     
@@ -74,8 +74,14 @@ extension PetrolListViewController: UITableViewDelegate, UITableViewDataSource {
       cell.pricePerLiterLabel.text = String(format: "%.2f", pricePerLiter)
     }
     
-    
     return cell
+  }
+  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    guard let viewModel = viewModel else {
+      return
+    }
+    viewModel.selectedRecord(petrolRecord: viewModel.petrolRecords[indexPath.row])
   }
 }
 

@@ -11,6 +11,9 @@
 		5E28DF782AFB7E2300A6071C /* PetrolRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E28DF772AFB7E2300A6071C /* PetrolRepository.swift */; };
 		5E28DF7A2AFB887900A6071C /* PetrolRecordViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E28DF792AFB887900A6071C /* PetrolRecordViewCell.swift */; };
 		5E28DF7D2AFB900100A6071C /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E28DF7C2AFB900100A6071C /* DateExtension.swift */; };
+		5E28DF842AFB94EC00A6071C /* PetrolDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E28DF832AFB94EC00A6071C /* PetrolDetailViewController.swift */; };
+		5E28DF862AFB94F700A6071C /* PetrolDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E28DF852AFB94F700A6071C /* PetrolDetailViewModel.swift */; };
+		5E28DF882AFB951900A6071C /* PetrolDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E28DF872AFB951900A6071C /* PetrolDetailCoordinator.swift */; };
 		5E4CAFCD2AFA756E00174225 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4CAFCC2AFA756E00174225 /* AppDelegate.swift */; };
 		5E4CAFD12AFA756E00174225 /* PetrolListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4CAFD02AFA756E00174225 /* PetrolListViewController.swift */; };
 		5E4CAFD72AFA756E00174225 /* petrolTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5E4CAFD52AFA756E00174225 /* petrolTracker.xcdatamodeld */; };
@@ -46,6 +49,9 @@
 		5E28DF772AFB7E2300A6071C /* PetrolRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetrolRepository.swift; sourceTree = "<group>"; };
 		5E28DF792AFB887900A6071C /* PetrolRecordViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetrolRecordViewCell.swift; sourceTree = "<group>"; };
 		5E28DF7C2AFB900100A6071C /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		5E28DF832AFB94EC00A6071C /* PetrolDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetrolDetailViewController.swift; sourceTree = "<group>"; };
+		5E28DF852AFB94F700A6071C /* PetrolDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetrolDetailViewModel.swift; sourceTree = "<group>"; };
+		5E28DF872AFB951900A6071C /* PetrolDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetrolDetailCoordinator.swift; sourceTree = "<group>"; };
 		5E4CAFC92AFA756E00174225 /* petrolTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = petrolTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E4CAFCC2AFA756E00174225 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E4CAFD02AFA756E00174225 /* PetrolListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetrolListViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +102,35 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		5E28DF7E2AFB93C600A6071C /* PetrolList */ = {
+			isa = PBXGroup;
+			children = (
+				5E28DF752AFB7D5500A6071C /* PetrolListViewCoordinator.swift */,
+				5E4CB0042AFA778100174225 /* PetrolListViewModel.swift */,
+				5E4CAFD02AFA756E00174225 /* PetrolListViewController.swift */,
+				5E28DF792AFB887900A6071C /* PetrolRecordViewCell.swift */,
+			);
+			path = PetrolList;
+			sourceTree = "<group>";
+		};
+		5E28DF812AFB93FF00A6071C /* PetrolDetail */ = {
+			isa = PBXGroup;
+			children = (
+				5E28DF832AFB94EC00A6071C /* PetrolDetailViewController.swift */,
+				5E28DF852AFB94F700A6071C /* PetrolDetailViewModel.swift */,
+				5E28DF872AFB951900A6071C /* PetrolDetailCoordinator.swift */,
+			);
+			path = PetrolDetail;
+			sourceTree = "<group>";
+		};
+		5E28DF822AFB944500A6071C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5E4CB00A2AFA7C8C00174225 /* PetrolRecord.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		5E4CAFC02AFA756E00174225 = {
 			isa = PBXGroup;
 			children = (
@@ -119,12 +154,11 @@
 		5E4CAFCB2AFA756E00174225 /* petrolTracker */ = {
 			isa = PBXGroup;
 			children = (
+				5E28DF812AFB93FF00A6071C /* PetrolDetail */,
+				5E28DF7E2AFB93C600A6071C /* PetrolList */,
+				5E28DF822AFB944500A6071C /* Model */,
 				5E28DF7B2AFB8FF500A6071C /* Utils */,
 				5E4CB0082AFA77E600174225 /* DataSource */,
-				5E4CB0092AFA77F400174225 /* Model */,
-				5E4CB0012AFA763500174225 /* Coordinator */,
-				5E4CB0002AFA762D00174225 /* ViewModel */,
-				5E4CAFFF2AFA760100174225 /* View */,
 				5E4CB0022AFA765A00174225 /* AppCoordinator.swift */,
 				5E4CAFCC2AFA756E00174225 /* AppDelegate.swift */,
 				5E4CAFD82AFA756F00174225 /* Assets.xcassets */,
@@ -152,45 +186,12 @@
 			path = petrolTrackerUITests;
 			sourceTree = "<group>";
 		};
-		5E4CAFFF2AFA760100174225 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				5E4CAFD02AFA756E00174225 /* PetrolListViewController.swift */,
-				5E28DF792AFB887900A6071C /* PetrolRecordViewCell.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		5E4CB0002AFA762D00174225 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				5E4CB0042AFA778100174225 /* PetrolListViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		5E4CB0012AFA763500174225 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				5E28DF752AFB7D5500A6071C /* PetrolListViewCoordinator.swift */,
-			);
-			path = Coordinator;
-			sourceTree = "<group>";
-		};
 		5E4CB0082AFA77E600174225 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
 				5E28DF772AFB7E2300A6071C /* PetrolRepository.swift */,
 			);
 			path = DataSource;
-			sourceTree = "<group>";
-		};
-		5E4CB0092AFA77F400174225 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				5E4CB00A2AFA7C8C00174225 /* PetrolRecord.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,13 +324,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E28DF842AFB94EC00A6071C /* PetrolDetailViewController.swift in Sources */,
 				5E28DF782AFB7E2300A6071C /* PetrolRepository.swift in Sources */,
 				5E28DF7D2AFB900100A6071C /* DateExtension.swift in Sources */,
+				5E28DF862AFB94F700A6071C /* PetrolDetailViewModel.swift in Sources */,
 				5E4CAFD72AFA756E00174225 /* petrolTracker.xcdatamodeld in Sources */,
 				5E4CAFD12AFA756E00174225 /* PetrolListViewController.swift in Sources */,
 				5E4CB0032AFA765A00174225 /* AppCoordinator.swift in Sources */,
 				5E28DF7A2AFB887900A6071C /* PetrolRecordViewCell.swift in Sources */,
 				5E28DF762AFB7D5500A6071C /* PetrolListViewCoordinator.swift in Sources */,
+				5E28DF882AFB951900A6071C /* PetrolDetailCoordinator.swift in Sources */,
 				5E4CAFCD2AFA756E00174225 /* AppDelegate.swift in Sources */,
 				5E4CB0052AFA778100174225 /* PetrolListViewModel.swift in Sources */,
 				5E4CB00B2AFA7C8C00174225 /* PetrolRecord.swift in Sources */,
