@@ -7,16 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E28DF762AFB7D5500A6071C /* PetrolListViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E28DF752AFB7D5500A6071C /* PetrolListViewCoordinator.swift */; };
+		5E28DF782AFB7E2300A6071C /* PetrolRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E28DF772AFB7E2300A6071C /* PetrolRepository.swift */; };
+		5E28DF7A2AFB887900A6071C /* PetrolRecordViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E28DF792AFB887900A6071C /* PetrolRecordViewCell.swift */; };
+		5E28DF7D2AFB900100A6071C /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E28DF7C2AFB900100A6071C /* DateExtension.swift */; };
 		5E4CAFCD2AFA756E00174225 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4CAFCC2AFA756E00174225 /* AppDelegate.swift */; };
-		5E4CAFCF2AFA756E00174225 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4CAFCE2AFA756E00174225 /* SceneDelegate.swift */; };
-		5E4CAFD12AFA756E00174225 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4CAFD02AFA756E00174225 /* ViewController.swift */; };
-		5E4CAFD42AFA756E00174225 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E4CAFD22AFA756E00174225 /* Main.storyboard */; };
+		5E4CAFD12AFA756E00174225 /* PetrolListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4CAFD02AFA756E00174225 /* PetrolListViewController.swift */; };
 		5E4CAFD72AFA756E00174225 /* petrolTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5E4CAFD52AFA756E00174225 /* petrolTracker.xcdatamodeld */; };
 		5E4CAFD92AFA756F00174225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E4CAFD82AFA756F00174225 /* Assets.xcassets */; };
 		5E4CAFDC2AFA756F00174225 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E4CAFDA2AFA756F00174225 /* LaunchScreen.storyboard */; };
 		5E4CAFE72AFA756F00174225 /* petrolTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4CAFE62AFA756F00174225 /* petrolTrackerTests.swift */; };
 		5E4CAFF12AFA756F00174225 /* petrolTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4CAFF02AFA756F00174225 /* petrolTrackerUITests.swift */; };
 		5E4CAFF32AFA756F00174225 /* petrolTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4CAFF22AFA756F00174225 /* petrolTrackerUITestsLaunchTests.swift */; };
+		5E4CB0032AFA765A00174225 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4CB0022AFA765A00174225 /* AppCoordinator.swift */; };
+		5E4CB0052AFA778100174225 /* PetrolListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4CB0042AFA778100174225 /* PetrolListViewModel.swift */; };
+		5E4CB00B2AFA7C8C00174225 /* PetrolRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4CB00A2AFA7C8C00174225 /* PetrolRecord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E28DF752AFB7D5500A6071C /* PetrolListViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetrolListViewCoordinator.swift; sourceTree = "<group>"; };
+		5E28DF772AFB7E2300A6071C /* PetrolRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetrolRepository.swift; sourceTree = "<group>"; };
+		5E28DF792AFB887900A6071C /* PetrolRecordViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetrolRecordViewCell.swift; sourceTree = "<group>"; };
+		5E28DF7C2AFB900100A6071C /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		5E4CAFC92AFA756E00174225 /* petrolTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = petrolTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E4CAFCC2AFA756E00174225 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5E4CAFCE2AFA756E00174225 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5E4CAFD02AFA756E00174225 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5E4CAFD32AFA756E00174225 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5E4CAFD02AFA756E00174225 /* PetrolListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetrolListViewController.swift; sourceTree = "<group>"; };
 		5E4CAFD62AFA756E00174225 /* petrolTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = petrolTracker.xcdatamodel; sourceTree = "<group>"; };
 		5E4CAFD82AFA756F00174225 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E4CAFDB2AFA756F00174225 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +58,9 @@
 		5E4CAFEC2AFA756F00174225 /* petrolTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = petrolTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E4CAFF02AFA756F00174225 /* petrolTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = petrolTrackerUITests.swift; sourceTree = "<group>"; };
 		5E4CAFF22AFA756F00174225 /* petrolTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = petrolTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5E4CB0022AFA765A00174225 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		5E4CB0042AFA778100174225 /* PetrolListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetrolListViewModel.swift; sourceTree = "<group>"; };
+		5E4CB00A2AFA7C8C00174225 /* PetrolRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetrolRecord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E28DF7B2AFB8FF500A6071C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5E28DF7C2AFB900100A6071C /* DateExtension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		5E4CAFC02AFA756E00174225 = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +119,14 @@
 		5E4CAFCB2AFA756E00174225 /* petrolTracker */ = {
 			isa = PBXGroup;
 			children = (
+				5E28DF7B2AFB8FF500A6071C /* Utils */,
+				5E4CB0082AFA77E600174225 /* DataSource */,
+				5E4CB0092AFA77F400174225 /* Model */,
+				5E4CB0012AFA763500174225 /* Coordinator */,
+				5E4CB0002AFA762D00174225 /* ViewModel */,
+				5E4CAFFF2AFA760100174225 /* View */,
+				5E4CB0022AFA765A00174225 /* AppCoordinator.swift */,
 				5E4CAFCC2AFA756E00174225 /* AppDelegate.swift */,
-				5E4CAFCE2AFA756E00174225 /* SceneDelegate.swift */,
-				5E4CAFD02AFA756E00174225 /* ViewController.swift */,
-				5E4CAFD22AFA756E00174225 /* Main.storyboard */,
 				5E4CAFD82AFA756F00174225 /* Assets.xcassets */,
 				5E4CAFDA2AFA756F00174225 /* LaunchScreen.storyboard */,
 				5E4CAFDD2AFA756F00174225 /* Info.plist */,
@@ -128,6 +150,47 @@
 				5E4CAFF22AFA756F00174225 /* petrolTrackerUITestsLaunchTests.swift */,
 			);
 			path = petrolTrackerUITests;
+			sourceTree = "<group>";
+		};
+		5E4CAFFF2AFA760100174225 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5E4CAFD02AFA756E00174225 /* PetrolListViewController.swift */,
+				5E28DF792AFB887900A6071C /* PetrolRecordViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5E4CB0002AFA762D00174225 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5E4CB0042AFA778100174225 /* PetrolListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5E4CB0012AFA763500174225 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				5E28DF752AFB7D5500A6071C /* PetrolListViewCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		5E4CB0082AFA77E600174225 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				5E28DF772AFB7E2300A6071C /* PetrolRepository.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		5E4CB0092AFA77F400174225 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5E4CB00A2AFA7C8C00174225 /* PetrolRecord.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +299,6 @@
 			files = (
 				5E4CAFDC2AFA756F00174225 /* LaunchScreen.storyboard in Resources */,
 				5E4CAFD92AFA756F00174225 /* Assets.xcassets in Resources */,
-				5E4CAFD42AFA756E00174225 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +323,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E28DF782AFB7E2300A6071C /* PetrolRepository.swift in Sources */,
+				5E28DF7D2AFB900100A6071C /* DateExtension.swift in Sources */,
 				5E4CAFD72AFA756E00174225 /* petrolTracker.xcdatamodeld in Sources */,
-				5E4CAFD12AFA756E00174225 /* ViewController.swift in Sources */,
+				5E4CAFD12AFA756E00174225 /* PetrolListViewController.swift in Sources */,
+				5E4CB0032AFA765A00174225 /* AppCoordinator.swift in Sources */,
+				5E28DF7A2AFB887900A6071C /* PetrolRecordViewCell.swift in Sources */,
+				5E28DF762AFB7D5500A6071C /* PetrolListViewCoordinator.swift in Sources */,
 				5E4CAFCD2AFA756E00174225 /* AppDelegate.swift in Sources */,
-				5E4CAFCF2AFA756E00174225 /* SceneDelegate.swift in Sources */,
+				5E4CB0052AFA778100174225 /* PetrolListViewModel.swift in Sources */,
+				5E4CB00B2AFA7C8C00174225 /* PetrolRecord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +369,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5E4CAFD22AFA756E00174225 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5E4CAFD32AFA756E00174225 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5E4CAFDA2AFA756F00174225 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -451,9 +511,10 @@
 				INFOPLIST_FILE = petrolTracker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -479,9 +540,10 @@
 				INFOPLIST_FILE = petrolTracker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

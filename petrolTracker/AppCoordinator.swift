@@ -29,6 +29,6 @@ class AppCoordinator {
     
     petrolListViewController.viewModel = petrolListViewModel
     
-    navigationController.
+    navigationController.pushViewController(petrolListViewController, animated: true)
   }
 }

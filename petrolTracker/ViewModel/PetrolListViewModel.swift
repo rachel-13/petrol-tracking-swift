@@ -7,18 +7,32 @@
 
 import Foundation
 
-protocol PetrolViewModelProtocol {
+protocol PetrolListViewModelProtocol {
+  var petrolRecords: [PetrolRecord] { get }
   func viewDidLoad()
 }
 
-class PetrolViewModel {
-  var viewController: PetrolViewControllerProtocol
+class PetrolListViewModel {
+  let viewController: PetrolListViewControllerProtocol
+  let repository: PetrolRepositoryProtocol
+  let coordinator: PetrolListCoordinatorProtocol
+  var petrolRecords: [PetrolRecord] = []
   
-  
+  init(viewController: PetrolListViewControllerProtocol, 
+       repository: PetrolRepositoryProtocol,
+       coordinator: PetrolListCoordinatorProtocol) {
+    self.viewController = viewController
+    self.repository = repository
+    self.coordinator = coordinator
+  }
 }
 
-extension PetrolViewModel: PetrolViewModelProtocol {
+extension PetrolListViewModel: PetrolListViewModelProtocol {
   func viewDidLoad() {
-    <#code#>
+    guard let records = repository.getData() else {
+      return
+    }
+    petrolRecords = records
+    viewController.refreshData()
   }
 }
